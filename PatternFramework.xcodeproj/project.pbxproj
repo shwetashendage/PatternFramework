@@ -19,6 +19,7 @@
 		F1AD3FA927BB735C001C5BE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1AD3FA727BB735C001C5BE8 /* LaunchScreen.storyboard */; };
 		F1AD3FB427BB735C001C5BE8 /* PatternFrameworkExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AD3FB327BB735C001C5BE8 /* PatternFrameworkExampleTests.swift */; };
 		F1AD3FBF27BB735C001C5BE8 /* PatternFrameworkExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AD3FBE27BB735C001C5BE8 /* PatternFrameworkExampleUITests.swift */; };
+		F1AD3FCB27BBBA55001C5BE8 /* Pattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AD3FCA27BBBA55001C5BE8 /* Pattern.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		F1AD3FBA27BB735C001C5BE8 /* PatternFrameworkExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PatternFrameworkExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1AD3FBE27BB735C001C5BE8 /* PatternFrameworkExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternFrameworkExampleUITests.swift; sourceTree = "<group>"; };
 		F1AD3FC027BB735C001C5BE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1AD3FCA27BBBA55001C5BE8 /* Pattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pattern.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			children = (
 				F1AD3F7C27BB71E4001C5BE8 /* PatternFramework.h */,
 				F1AD3F7D27BB71E4001C5BE8 /* Info.plist */,
+				F1AD3FCA27BBBA55001C5BE8 /* Pattern.swift */,
 			);
 			path = PatternFramework;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				TargetAttributes = {
 					F1AD3F7827BB71E4001C5BE8 = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					F1AD3F8127BB71E4001C5BE8 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -383,6 +387,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1AD3FCB27BBBA55001C5BE8 /* Pattern.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,6 +591,7 @@
 		F1AD3F8E27BB71E4001C5BE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -601,6 +607,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.shweta.PatternFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -609,6 +616,7 @@
 		F1AD3F8F27BB71E4001C5BE8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -632,6 +640,7 @@
 		F1AD3F9127BB71E4001C5BE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PatternFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -649,6 +658,7 @@
 		F1AD3F9227BB71E4001C5BE8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PatternFrameworkTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
