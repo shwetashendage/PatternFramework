@@ -17,10 +17,10 @@ Pod::Spec.new do |spec|
 
 
 
-  spec.author             = { "Shweta Shendage" => "shwetashendage@gmail.com" }
+  spec.author             = { "ShwetaShendage" => "shwetashendage@gmail.com" }
   
-  spec.ios.deployment_target = "12.1"
-  spec.swift_version = "4.2"
+  spec.ios.deployment_target = "14.1"
+  spec.swift_version = "5.0"
  
 
   spec.source       = { :git => "https://github.com/shwetashendage/PatternFramework.git", :tag => "#{spec.version}" }
